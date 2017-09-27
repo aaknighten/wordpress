@@ -33,7 +33,10 @@ yum_package 'httpd' do
    action :install
  end
 
-
+execute 'yum update' do
+  command 'yum update -y'
+  action :run
+end
 
 # Bash script to Download WordPress, place it within the opt directory
 bash 'WordPress Download' do
@@ -45,16 +48,13 @@ bash 'WordPress Download' do
   EOH
 end
 
+execute 'create php template' do
+  command 'cp /var/www/html/wordpress/wp-config-sample.php /tmp/create-wp-config/wp-config.php'
+  action :run
+end
 
 
-#
 # Cookbook:: wordpress
 # Recipe:: default
 #
 # Copyright:: 2017, Alayshia Knighten, All Rights Reserved.
-
-#
-# Cookbook:: wordpress
-# recipe:: default
-#
-# Copyright:: 2017, The Authors, All Rights Reserved.
