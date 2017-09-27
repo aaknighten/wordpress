@@ -67,15 +67,6 @@ end
  end
 
 
-execute 'cp /var/www/html/wordpress/wp-config-sample.php /var/www/html/wordpress/wp-config.php' do
-   cwd '/opt'
-   action :run
-end
-
-
-
-
-
 #
 # Cookbook:: wordpress
 # Recipe:: default
