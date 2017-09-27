@@ -44,11 +44,6 @@ bash 'WordPress Download' do
   EOH
 end
 
-execute 'create php template' do
-  command 'cp /var/www/html/wordpress/wp-config-sample.php /tmp/wp-config.php'
-  action :run
-end
-
 
 # Cookbook:: wordpress
 # Recipe:: default
