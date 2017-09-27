@@ -1,7 +1,0 @@
-DEPENDENCIES
-  wordpress
-    path: .
-    metadata: true
-
-GRAPH
-  wordpress (0.1.0)
