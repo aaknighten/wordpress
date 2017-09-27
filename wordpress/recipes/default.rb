@@ -44,16 +44,8 @@ bash 'WordPress Download' do
   EOH
 end
 
-#make directory for wp-configuration
-directory '/tmp/create-wp-config' do
-  owner 'root'
-  group 'root'
-  mode '0755'
-  action :create
-end
-
 execute 'create php template' do
-  command 'cp /var/www/html/wordpress/wp-config-sample.php /tmp/create-wp-config/wp-config.php'
+  command 'cp /var/www/html/wordpress/wp-config-sample.php /tmp/wp-config.php'
   action :run
 end
 
