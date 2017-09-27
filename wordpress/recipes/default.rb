@@ -33,10 +33,6 @@ yum_package 'httpd' do
    action :install
  end
 
-execute 'yum update' do
-  command 'yum update -y'
-  action :run
-end
 
 # Bash script to Download WordPress, place it within the opt directory
 bash 'WordPress Download' do
