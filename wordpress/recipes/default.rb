@@ -48,7 +48,7 @@ bash 'WordPress Download' do
   cwd '/tmp'
   code <<-EOH
   wget https://wordpress.org/latest.tar.gz
-  tar -xvf latest.tar.gz -C /var
+  tar -xvf latest.tar.gz -C /var/www/html
   EOH
 end
 
