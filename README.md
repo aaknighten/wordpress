@@ -5,7 +5,7 @@ This is a WordPress repository designed to install WordPress using a Cloud Forma
 Below is a Summary of What Each Template Does:
 
 1. KnightenWordPressNoChef.json:
-        Installs a basic Web Server, installing all components for the WordPress site and setting the parameter
+	Installs a basic Web Server, installing all components for the WordPress site and setting the parameter
 
 2. KnightenWordPressChef.json:
         Installs a complete environment (VP, RouteTable, Subnets, etc.), installs both Chef and ChefDK from the respected      repositories, retreives the created WordPress that is stored within a repository, generate the Berksfile, set the run list, run, and pass the configuration variables to each file.
