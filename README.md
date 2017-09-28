@@ -5,11 +5,13 @@ This is a WordPress repository designed to install WordPress using a Cloud Forma
 Below is a Summary of what each template does:
 
 1. 
+Installs a basic Web Server, installing all components for the WordPress site and setting the parameter
 
 2. KnightenWordPressChef.json:
-        Installs a complete environment (VP, RouteTable, Subnets, etc.), installs both Chef and ChefDK from the     respected      repositories, retreives the created WordPress that is stored within a repository, generate the Berksfile, set the run list, run, and pass the configuration variables to each file.
+        Installs a complete environment (VP, RouteTable, Subnets, etc.), installs both Chef and ChefDK from the respected      repositories, retreives the created WordPress that is stored within a repository, generate the Berksfile, set the run list, run, and pass the configuration variables to each file.
 
-3. Installs a complete environment (VP, RouteTable, Subnets, etc.), installs both Chef and ChefDK from the   respected repositories, retreives the created WordPress that is stored on Chefs Cookbook site, set the run list, and run
+3. KnightenWordPressChefCookBook.json: 
+        Installs a complete environment (VP, RouteTable, Subnets, etc.), installs both Chef and ChefDK from the  respected repositories, retreives the created WordPress that is stored on Chefs Cookbook site, set the run list, and run
 
 For the purpose of the assignment, please refer to template : KnightenWordPressChef.json
 
